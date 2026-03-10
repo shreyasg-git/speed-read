@@ -37,3 +37,22 @@ body {
   50% { opacity: 1; }
   100% { transform: translateX(-50px); opacity: 0; }
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--background);
+  border-left: 1px solid var(--foreground);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--foreground);
+  border: 2px solid var(--background);
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--foreground) var(--background);
+}
